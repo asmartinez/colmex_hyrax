@@ -3,7 +3,6 @@ es:
     search:
       fields:
         facet:
-          degree_program_sim: Grado
           director_sim: Director de Tesis
           edition_sim: Edición
           extension_sim: Páginas
@@ -12,7 +11,6 @@ es:
           item_use_restrictions_sim: Restricción de uso del ítem
           system_requirements_sim: Requerimientos de sistema
         index:
-          degree_program_tesim: Grado
           director_tesim: Director de Tesis
           edition_tesim: Edición
           extension_tesim: Páginas
@@ -35,7 +33,6 @@ es:
         academic_degree: Grado Académico
         awards: Premios/Reconocimientos
         date_of_presentation_of_the_thesis: Fecha de presentación de la tesis
-        degree_program: Grado
         digital_resource_generation_information: Información de generación de recursos digitales
         dimensions: Dimensiones
         director: Director

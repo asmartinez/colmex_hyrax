@@ -3,11 +3,9 @@ en:
     search:
       fields:
         facet:
-          degree_program_sim: Degree program
           director_sim: Thesis Advisor
           #existen apartados de sim y tesim en .es que no estan en .en
         index:
-          degree_program_tesim: Degree program
           director_tesim: Thesis Advisor
   hyrax:
     icons:
@@ -22,7 +20,6 @@ en:
         awards: Awards
         academic_degree: Academic degree
         date_of_presentation_of_the_thesis: Date of presentation of the Thesis
-        degree_program: Degree program
         digital_resource_generation_information: Digital resource generation information
         dimensions: Dimensions
         director: Thesis advisor

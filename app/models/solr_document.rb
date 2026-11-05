@@ -216,10 +216,6 @@ class SolrDocument
     self['type_of_thesis_tesim']
   end
 
-  def degree_program
-    self['degree_program_tesim']
-  end
-
   def institution
     self['institution_tesim']
   end

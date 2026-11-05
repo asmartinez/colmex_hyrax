@@ -27,11 +27,6 @@ RSpec.describe Hyrax::ThesisPresenter do
     presenter.type_of_thesis
   end
 
-  it 'delegates degree_program' do
-    expect(solr_document).to receive(:degree_program)
-    presenter.degree_program
-  end
-
   it 'delegates institution' do
     expect(solr_document).to receive(:institution)
     presenter.institution

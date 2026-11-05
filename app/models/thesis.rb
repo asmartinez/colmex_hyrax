@@ -29,11 +29,6 @@ class Thesis < ActiveFedora::Base
     index.as :stored_searchable, :facetable
   end
 
-  property :degree_program, predicate: ::Vocab::RDAW.grantingInstitutionOrFaculty, multiple: false do |index|
-    index.type :text
-    index.as :stored_searchable, :facetable
-  end
-
   property :institution, predicate: ::RDF::Vocab::BF2.grantingInstitution, multiple: false do |index|
     index.type :text
     index.as :stored_searchable, :facetable

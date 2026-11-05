@@ -100,7 +100,6 @@ class CatalogController < ApplicationController
     config.add_facet_field solr_name("file_format", :facetable), limit: 5
 
     # config.add_facet_field solr_name("reviewer", :facetable), limit: 5
-    config.add_facet_field solr_name("degree_program", :facetable), limit: 5
     config.add_facet_field solr_name("type_of_illustrations", :facetable), limit: 5
     config.add_facet_field solr_name("contained_in", :facetable), limit: 5
 
@@ -209,7 +208,6 @@ class CatalogController < ApplicationController
     config.add_index_field solr_name("source", :stored_searchable), link_to_search: solr_name("source", :facetable)
     config.add_index_field solr_name("director", :stored_searchable), link_to_search: solr_name("director", :facetable)
     config.add_index_field solr_name("mode_of_issuance", :stored_searchable)
-    config.add_index_field solr_name("degree_program", :stored_searchable), link_to_search: solr_name("degree_program", :facetable)
     # config.add_index_field solr_name("database", :stored_searchable), link_to_search: solr_name("database", :facetable)
     config.add_index_field solr_name("alternative_numeric_and_or_alphabethic_designation", :stored_searchable), link_to_search: solr_name("alternative_numeric_and_or_alphabethic_designation", :facetable)
     # config.add_index_field solr_name("keyword", :stored_searchable), itemprop: 'keywords', link_to_search: solr_name("keyword", :facetable)
@@ -360,7 +358,6 @@ class CatalogController < ApplicationController
     config.add_show_field solr_name("source", :stored_searchable)
     config.add_show_field solr_name("director", :stored_searchable)
     config.add_show_field solr_name("mode_of_issuance", :stored_searchable)
-    config.add_show_field solr_name("degree_program", :stored_searchable)
     config.add_show_field solr_name("alternative_numeric_and_or_alphabethic_designation", :stored_searchable)
     config.add_show_field solr_name("proxy_depositor", :symbol), label: "Depositor", helper_method: :link_to_profile
     config.add_show_field solr_name("based_near_label", :stored_searchable)

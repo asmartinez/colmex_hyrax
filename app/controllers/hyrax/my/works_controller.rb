@@ -38,7 +38,6 @@ module Hyrax
           config.add_facet_field "source_sim", limit: 5
           config.add_facet_field "file_format_sim", limit: 5
           
-          config.add_facet_field "degree_program_sim", limit: 5
           config.add_facet_field "type_of_illustrations_sim", limit: 5
           config.add_facet_field "contained_in_sim", limit: 5
 

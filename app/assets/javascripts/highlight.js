@@ -363,7 +363,6 @@ var HighLight = function() {
     "geographic_coverage",
     "temporary_coverage",
     "director",
-    "degree_program",
     "q"    
   ]
   range_dates = []
