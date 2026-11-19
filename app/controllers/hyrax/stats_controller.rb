@@ -14,8 +14,8 @@ module Hyrax
         @downloads = Hyrax::Analytics.daily_events_for_id(@document.id, 'file-set-in-work-download')
       rescue StandardError => e
         Rails.logger.warn("Google Analytics statistics unavailable: #{e.class}: #{e.message}")
-        @pageviews = []
-        @downloads = []
+        @pageviews = Hyrax::Analytics::Results.new([])
+        @downloads = Hyrax::Analytics::Results.new([])
       end
     end
 
